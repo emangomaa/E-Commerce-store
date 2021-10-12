@@ -1,0 +1,35 @@
+.account {
+    background-color: #ffe5e5;
+    height: fit-content;
+    padding: 40px;
+  }
+  .account .container .account-form {
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #ccc;
+    background-color: #fff;
+  }
+  .account .container .account-form input {
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 10px;
+  }
+  .account .container .account-form input:focus {
+    border: 1px solid #ff523b;
+    outline: none;
+  }
+  .account .container .account-form input:last-of-type {
+    border-radius: 20px;
+    background-color: #ff523b;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+  }
+  .account .container .account-form input:last-of-type:hover {
+    background-color: #563434;
+  }
+  .account .container .account-form a {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+  }
+  

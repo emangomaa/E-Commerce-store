@@ -1,0 +1,103 @@
+/* langing page style */
+.landingpage {
+    background-color: #ffe5e5;
+  }
+  .row {
+    height: fit-content;
+    align-items: center;
+    padding: 50px 0;
+    justify-content: space-around;
+  }
+  .landingpage h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.5px;
+    margin-top: 100px;
+  }
+  .landingpage p {
+    padding-top: 30px;
+    color: rgb(85, 85, 85);
+  }
+  
+  .first-show{
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+  }
+  img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .product {
+    position: relative;
+  }
+  .detailsbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #858585;
+    color: #858585;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  .detailsbutton:hover {
+    color: #ff523b;
+    border: 1px solid #ff523b;
+    text-decoration: none;
+  }
+  /*  exclusive style*/
+  .exclusive {
+    background-color: #ffe5e5;
+  }
+  .exclusive span {
+    color: rgb(85, 85, 85);
+  }
+  .exclusive p {
+    color: rgb(85, 85, 85);
+    font-size: 13.333px;
+  }
+  .exclusive h2 {
+    font-size: 50px;
+    padding: 30px 0 30px;
+  }
+  /* people say style */
+  .person {
+    box-shadow: 1px 1px 10px #eee;
+    transition: 0.5s;
+  }
+  .person:hover {
+    transform: translateY(-10px);
+  }
+  .person-img {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 15px;
+  }
+  .person-img img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  h5 {
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+  }
+  
+  /* sponsers style */
+  .sponsers img {
+    filter: grayscale(1);
+  }
+  .sponsers img:hover {
+    filter: grayscale(0);
+  }
+  
