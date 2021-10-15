@@ -54,7 +54,7 @@ class ShoppingCart extends Component {
             {this.state.products.map((p)=>(
               <React.Fragment key={p.id}>
                 <tr >
-                  <td><img style={{width:"50px",height:"70px"}} src={p.src}/></td>
+                  <td><img style={{width:"50px",height:"70px"}} src={process.env.PUBLIC_URL +`${p.src}`}/></td>
                   <td>{p.name}</td>
                   <td>{p.price}</td>
                   <td>
