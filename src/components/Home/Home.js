@@ -27,13 +27,13 @@ class Home extends Component {
         <div className="container">
           <div className="row justify-content-center">
             <div className="first-show col-12 col-md-6 col-lg-4 mb-4">
-              <img src="/images/category-1.jpg" />
+              <img src={process.env.PUBLIC_URL+"/images/category-1.jpg"} />
             </div>
             <div className="first-show col-12 col-md-6 col-lg-4 mb-4">
-              <img src="/images/category-2.jpg" />
+              <img src={process.env.PUBLIC_URL+"/images/category-2.jpg"} />
             </div>
             <div className="first-show col-12 col-md-6 col-lg-4 mb-4">
-              <img src="/images/category-3.jpg"/>
+              <img src={process.env.PUBLIC_URL+"/images/category-3.jpg"}/>
             </div>
           </div>
         </div>
