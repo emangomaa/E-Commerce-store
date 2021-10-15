@@ -139,6 +139,7 @@ class App extends Component {
                 <Products
                   LatestProducts={this.state.latestProducts}
                   FeaturedProducts={this.state.featuredProducts}
+                  handleAdd={this.addToCart}
                 />
               )}
             />

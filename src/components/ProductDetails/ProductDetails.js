@@ -29,7 +29,7 @@ const ProductDetails = (props) => {
         <div className="col-8 col-sm-6 col-md-4 mb-3 p-4">
           <img src={process.env.PUBLIC_URL + `${product.src}` } alt="product img"/>
         </div>
-        <div className="col-8 col-sm-6 col-md-4 mb-3 p-4 align-self-start">
+        <div className="col-8 col-sm-6 col-md-4 mb-3 p-4">
           <h4> Product No.{props.match.params.id}</h4>
           <h3>{product.name}</h3>
           <p>details about the product</p>
@@ -43,9 +43,10 @@ const ProductDetails = (props) => {
                     padding:20
                   }}
                   to="/shoppingCart"
-                  class="fas fa-shopping-cart"
+                  class="fas fa-shopping-cart col-12"
                   onClick={()=> props.handleAdd(product)}
           ></Link>
+          <Link to="/products" className="button col-12">Back To Products</Link>
         </div>
       </div>
     </div>

@@ -25,14 +25,14 @@ class Home extends Component {
           </div>
         </div>
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="first-show col-12 col-md-6 col-lg-4 mb-4">
+          <div className="row justify-content-center px-2">
+            <div className="first-show col-12 col-md-6 col-lg-4 mb-4 px-3">
               <img src={process.env.PUBLIC_URL+"/images/category-1.jpg"} />
             </div>
-            <div className="first-show col-12 col-md-6 col-lg-4 mb-4">
+            <div className="first-show col-12 col-md-6 col-lg-4 mb-4 px-3">
               <img src={process.env.PUBLIC_URL+"/images/category-2.jpg"} />
             </div>
-            <div className="first-show col-12 col-md-6 col-lg-4 mb-4">
+            <div className="first-show col-12 col-md-6 col-lg-4 mb-4 px-3">
               <img src={process.env.PUBLIC_URL+"/images/category-3.jpg"}/>
             </div>
           </div>
@@ -43,7 +43,7 @@ class Home extends Component {
               <h2>Featured Products</h2>
             </div>
             {this.props.FeaturedProducts.map((p,index) => (
-              <div key={index} className="col-12 col-md-6 col-lg-3 mb-3 p-4 product">
+              <div key={index} className="col-12 col-md-6 col-lg-3 mb-2 px-5 product">
                 <div className="row">
                   <div className="col-12">
                     <img src={process.env.PUBLIC_URL+ `${p.src}`} alt="product" />
@@ -61,7 +61,7 @@ class Home extends Component {
                       textAlign: "right"
                     }}
                     to="/shoppingCart"
-                    className="col-6 fas fa-shopping-cart"
+                    className="col-6 px-3 fas fa-shopping-cart"
                     onClick={()=> this.props.handleAdd(p)}
                   ></Link>
                 </div> 
@@ -75,7 +75,7 @@ class Home extends Component {
               <h2>Latest Products</h2>
             </div>
             {this.props.LatestProducts.map((p,index) => (
-            <div key={index} className="col-12 col-md-6 col-lg-3 mb-3 p-4 product">
+            <div key={index} className="col-12 col-md-6 col-lg-3 mb-2 px-5 product">
               <div className="row">
                 <div className="col-12">
                   <img src={process.env.PUBLIC_URL+`${p.src}`} alt="product" />
@@ -93,7 +93,7 @@ class Home extends Component {
                     textAlign: "right"
                   }}
                   to="/shoppingCart"
-                  className="col-6 fas fa-shopping-cart"
+                  className="col-6 px-3 fas fa-shopping-cart"
                   onClick={()=> this.props.handleAdd(p)}
                 ></Link>
               </div> 

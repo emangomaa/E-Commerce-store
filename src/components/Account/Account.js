@@ -36,28 +36,21 @@ class Account extends Component {
             <div className="col-12 col-md-6 col-lg-5 account-img mb-4">
               <img src={process.env.PUBLIC_URL +"/images/image1.png"}/>
             </div>
-            <div className="col-12 col-md-6 col-lg-5 row account-form mt-4">
-              <div className="col-6">
-                <span
+            <div className="col-12 col-md-6 col-lg-5 row account-form">
+              
+              
+              {(displayForm)?
+              <form onSubmit={this.handleRegister} className="px-5">
+                <div className="col-12 mb-5">
+                <p
                   style={{
-                    borderBottom:"3px solid #ff523b",
+                    fontSize:"30px",
                     fontWeight: "bold",
                   }}
                 >
                   Register
-                </span>
+                </p>
               </div>
-              <div className="col-6">
-                <span
-                  style={{
-                    fontWeight: "bold",
-                  }}
-                >
-                  Login
-                </span>
-              </div>
-              {(displayForm)?
-              <form onSubmit={this.handleRegister} className="p-5">
                 <input
                   className="col-12 mb-3 p-2"
                   name="username"
@@ -94,7 +87,17 @@ class Account extends Component {
                 </a>
               </form>
               :
-              <form onSubmit={this.handleLogin} className="p-5">
+              <form onSubmit={this.handleLogin} className="px-5">
+                <div className="col-12 mb-5">
+                <p
+                  style={{
+                    fontSize:"30px",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Login
+                </p>
+              </div>
                 <input
                   className="col-12 mb-3 p-2"
                   name="username"
