@@ -19,7 +19,7 @@ class Home extends Component {
                 <Link to="/account" className="col-12 button">Register Now →</Link>
               </div>
               <div className="col-12 col-md-6 mt-5">
-                <img src="/E-Commerce-store/images/image1.png" />
+                <img src={process.env.PUBLIC_URL+"/images/image1.png"} />
               </div>
             </div>
           </div>
