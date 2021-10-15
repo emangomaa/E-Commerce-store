@@ -22,7 +22,7 @@ class Products extends Component {
             </div>
             {this.props.FeaturedProducts.map((p,index) => (
               <div key={index} className="col-10 col-sm-6 col-md-3  mb-3 p-4">
-                <img src={p.src} alt="product" />
+                <img src={process.env.PUBLIC_URL+`${p.src}`} alt="product" />
                 <p className="pt-3">{p.name}</p>
                 <Ratting />
                 <span>{p.price}</span>
@@ -30,7 +30,7 @@ class Products extends Component {
             ))}
             {this.props.LatestProducts.map((p,index) => (
               <div key={index} className="col-10 col-sm-6 col-md-3  mb-3 p-4">
-                <img src={p.src} alt="product" />
+                <img src={process.env.PUBLIC_URL+`${p.src}`} alt="product" />
                 <p className="pt-3">{p.name}</p>
                 <Ratting />
                 <span>{p.price}</span>
