@@ -34,7 +34,7 @@ class Account extends Component {
         <div className="container">
           <div className="row text-center">
             <div className="col-12 col-md-6 col-lg-5 account-img mb-4">
-              <img src="/assets/images/image1.png" />
+              <img src={process.env.PUBLIC_URL + "/images/image1.png" }/>
             </div>
             <div className="col-12 col-md-6 col-lg-5 row account-form mt-4">
               <div className="col-6">
