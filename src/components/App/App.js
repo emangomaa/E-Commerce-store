@@ -19,28 +19,28 @@ class App extends Component {
       featuredProducts: [
         {
           "id": 1,
-          "src": "/E-Commerce-store/images/product-1.jpg",
+          "src": `{process.env.PUBLIC_URL+"/images/product-1.jpg"}`,
           "name": "Red Printed T-Shirt",
           "price": "50.00 $",
           "amount": 1
         },
         {
           "id": 2,
-          "src": "/E-Commerce-store/images/product-2.jpg",
+          "src": "/images/product-2.jpg",
           "name": "Shoe",
           "price": "60.00 $",
           "amount": 1
         },
         {
           "id": 3,
-          "src": "/E-Commerce-store/images/product-3.jpg",
+          "src": "/images/product-3.jpg",
           "name": "Trosers",
           "price": "10.00 $",
           "amount": 1
         },
         {
           "id": 4,
-          "src": "/E-Commerce-store/images/product-4.jpg",
+          "src": "/images/product-4.jpg",
           "name": "blue Printed T-Shirt",
           "price": "20.00 $",
           "amount": 1
@@ -49,56 +49,56 @@ class App extends Component {
       latestProducts: [
         {
           "id": 5,
-          "src": "/E-Commerce-store/images/product-5.jpg",
+          "src": "/images/product-5.jpg",
           "name": "Red Printed T-Shirt",
           "price": "50.00 $",
           "amount": 1
         },
         {
           "id": 6,
-          "src": "/E-Commerce-store/images/product-6.jpg",
+          "src": "/images/product-6.jpg",
           "name": "Red Printed T-Shirt",
           "price": "60.00 $",
           "amount": 1
         },
         {
           "id": 7,
-          "src": "/E-Commerce-store/images/product-7.jpg",
+          "src": "/images/product-7.jpg",
           "name": "Red Printed T-Shirt",
           "price": "10.00 $",
           "amount": 1
         },
         {
           "id": 8,
-          "src": "/E-Commerce-store/images/product-8.jpg",
+          "src": "/images/product-8.jpg",
           "name": "Red Printed T-Shirt",
           "price": "230.0 $0",
           "amount": 1
         },
         {
           "id": 9,
-          "src": "/E-Commerce-store/images/product-9.jpg",
+          "src": "/images/product-9.jpg",
           "name": "Red Printed T-Shirt",
           "price": "240.0 $0",
           "amount": 1
         },
         {
           "id": 10,
-          "src": "/E-Commerce-store/images/product-10.jpg",
+          "src": "/images/product-10.jpg",
           "name": "Red Printed T-Shirt",
           "price": "70.00 $",
           "amount": 1
         },
         {
           "id": 11,
-          "src": "/E-Commerce-store/images/product-11.jpg",
+          "src": "/images/product-11.jpg",
           "name": "Red Printed T-Shirt",
           "price": "50.00 $",
           "amount": 1
         },
         {
           "id": 12,
-          "src": "/E-Commerce-store/images/product-12.jpg",
+          "src": "/images/product-12.jpg",
           "name": "Red Printed T-Shirt",
           "price": "60.00 $",
           "amount": 1
