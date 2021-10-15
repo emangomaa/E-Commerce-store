@@ -46,7 +46,7 @@ class Home extends Component {
               <div key={index} className="col-12 col-md-6 col-lg-3 mb-3 p-4 product">
                 <div className="row">
                   <div className="col-12">
-                    <img src={p.src} alt="product" />
+                    <img src={process.env.PUBLIC_URL+ `${p.src}`} alt="product" />
                     <Link to={`/productdetails/${p.id}`} className="detailsbutton">
                       Details 
                     </Link>
@@ -78,7 +78,7 @@ class Home extends Component {
             <div key={index} className="col-12 col-md-6 col-lg-3 mb-3 p-4 product">
               <div className="row">
                 <div className="col-12">
-                  <img src={process.env.PUBLIC_URL+p.src} alt="product" />
+                  <img src={process.env.PUBLIC_URL+`${p.src}`} alt="product" />
                   <Link to={`/productdetails/${p.id}`} className="detailsbutton">
                     Details 
                   </Link>
