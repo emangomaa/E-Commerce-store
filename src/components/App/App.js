@@ -19,7 +19,7 @@ class App extends Component {
       featuredProducts: [
         {
           "id": 1,
-          "src": process.env.PUBLIC_URL+'/images/product-1.jpg',
+          "src": '/images/product-1.jpg',
           "name": "Red Printed T-Shirt",
           "price": "50.00 $",
           "amount": 1
