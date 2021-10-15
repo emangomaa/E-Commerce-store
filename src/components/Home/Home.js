@@ -105,7 +105,7 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-12 col-md-6 pt-5">
-                <img src="/images/exclusive.png" />
+                <img src={process.env.PUBLIC_URL+"/images/exclusive.png"} />
               </div>
               <div className="col-12 col-md-6 pt-5">
                 <span>Exclusive Available on RedStore</span>
@@ -137,7 +137,7 @@ class Home extends Component {
               </p>
               <Ratting />
               <div className="person-img">
-                <img src="/images/user-1.png" />
+                <img src={process.env.PUBLIC_URL+"/images/user-1.png"} />
               </div>
               <h5>Sean Parker</h5>
             </div>
@@ -156,7 +156,7 @@ class Home extends Component {
               </p>
               <Ratting />
               <div className="person-img">
-                <img src="/images/user-2.png" />
+                <img src={process.env.PUBLIC_URL+"/images/user-2.png"}/>
               </div>
               <h5>Mike Smith</h5>
             </div>
@@ -175,7 +175,7 @@ class Home extends Component {
               </p>
               <Ratting />
               <div className="person-img">
-                <img src="/images/user-3.png" />
+                <img src={process.env.PUBLIC_URL+"/images/user-3.png"}/>
               </div>
               <h5>Mabel Joe</h5>
             </div>
@@ -185,22 +185,22 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className=" col-6 col-md-2">
-                <img src="/images/logo-godrej.png" alt="logo-godrej" />
+                <img src={process.env.PUBLIC_URL+"/images/logo-godrej.png"} alt="logo-godrej" />
               </div>
               <div className=" col-6 col-md-2">
-                <img src="/images/logo-oppo.png" alt="logo-oppo" />
+                <img src={process.env.PUBLIC_URL+"/images/logo-oppo.png"} alt="logo-oppo" />
               </div>
               <div className=" col-6 col-md-2">
                 <img
-                  src="/images/logo-coca-cola.png"
+                  src={process.env.PUBLIC_URL+"/images/logo-coca-cola.png"}
                   alt="logo-coca-cola"
                 />
               </div>
               <div className=" col-6 col-md-2">
-                <img src="/images/logo-paypal.png" alt="logo-paypal" />
+                <img src={process.env.PUBLIC_URL+"/images/logo-paypal.png"} alt="logo-paypal" />
               </div>
               <div className=" col-6 col-md-2">
-                <img src="/images/logo-philips.png" alt="logo-philips" />
+                <img src={process.env.PUBLIC_URL+"/images/logo-philips.png"} alt="logo-philips" />
               </div>
             </div>
           </div>

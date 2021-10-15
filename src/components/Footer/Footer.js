@@ -11,15 +11,15 @@ const Footer = () => {
                 Download App for Android and ios mobile phone.
               </p>
               <div className="img-box mb-2">
-                <img src="/images/play-store.png" />
+                <img src={process.env.PUBLIC_URL+"/images/play-store.png"} />
               </div>
               <div className="img-box mb-2">
-                <img src="/images/app-store.png" />
+                <img src={process.env.PUBLIC_URL+"/images/app-store.png"} />
               </div>
             </div>
             <div className="col-12 col-md-3 content-item mb-4">
               <div className="img-box">
-                <img src="/images/logo-white.png" />
+                <img src={process.env.PUBLIC_URL+"/images/logo-white.png"} />
               </div>
               <p style={{ color: "gray" }}>
                 Our Purpose Is To Sustainably Make th Pleasure and Benefits of

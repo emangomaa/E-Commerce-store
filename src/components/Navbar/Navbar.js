@@ -13,7 +13,7 @@ const Navbar = (props) => {
       <div className="container-fluid">
         
         <NavLink className="navbar-brand" to="/home">
-          <img style={{ width: 150 }} src="/images/logo.png" />
+          <img style={{ width: 150 }} src={process.env.PUBLIC_URL+"/images/logo.png"} />
         </NavLink>
         
         <button
@@ -56,7 +56,7 @@ const Navbar = (props) => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/shoppingCart">
-                <img style={{ width: 30 }} src="/images/cart.png" />
+                <img style={{ width: 30 }} src={process.env.PUBLIC_URL+"/images/cart.png"}/>
               </NavLink>
             </li>
           </ul>
