@@ -6,7 +6,7 @@ const Navbar = (props) => {
     <nav
       className="navbar navbar-expand-md navbar-light p-3"
       style={{
-        fontSize: 16,
+        fontSize: 18,
         backgroundColor: "#ffe5e5",
       }}
     >

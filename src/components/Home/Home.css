@@ -35,6 +35,9 @@
   .product {
     position: relative;
   }
+  .product i{
+    color: #ff523b;
+  }
   .detailsbutton {
     position: absolute;
     top: 50%;
@@ -88,11 +91,14 @@
     width: 100%;
     border-radius: 50%;
   }
-  h5 {
+  .person i{
+    color:#ff523b;
+  }
+  .person h5 {
     color: rgb(85, 85, 85);
     font-weight: 500;
   }
-  
+
   /* sponsers style */
   .sponsers img {
     filter: grayscale(1);
