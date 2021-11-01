@@ -41,9 +41,9 @@ const Footer = () => {
 
               <ul className="follow-us">
                 <li><a href="http://www.facebook.com"><i className="fab fa-facebook"></i></a></li>
-                <li><a href="http://www.facebook.com"><i className="fab fa-twitter"></i></a></li>
-                <li><a href="http://www.facebook.com"><i className="fab fa-instagram"></i></a></li>
-                <li><a href="http://www.facebook.com"><i  className="fab fa-youtube"></i></a></li>
+                <li><a href="http://www.twitter.com"><i className="fab fa-twitter"></i></a></li>
+                <li><a href="http://www.insta.com"><i className="fab fa-instagram"></i></a></li>
+                <li><a href="http://www.youtube.com"><i  className="fab fa-youtube"></i></a></li>
               </ul>
             </div>
           </div>

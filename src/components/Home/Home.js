@@ -60,7 +60,7 @@ class Home extends Component {
                       fontSize: 25,
                       textAlign: "right"
                     }}
-                    to="/shoppingCart"
+                    to="/"
                     className="col-6 px-3 fas fa-shopping-cart"
                     onClick={()=> this.props.handleAdd(p)}
                   ></Link>
@@ -92,7 +92,7 @@ class Home extends Component {
                     fontSize: 25,
                     textAlign: "right"
                   }}
-                  to="/shoppingCart"
+                  to="/"
                   className="col-6 px-3 fas fa-shopping-cart"
                   onClick={()=> this.props.handleAdd(p)}
                 ></Link>

@@ -104,9 +104,13 @@ class App extends Component {
           "amount": 1
         }
       ],
-      shoppingProducts:[]
+      shoppingProducts:[],
+      maxAmount:10
     };
     this.addToCart = this.addToCart.bind(this)
+    this.deleteFromCart = this.deleteFromCart.bind(this);
+    this.increaseCount = this.increaseCount.bind(this);
+    this.decreaseCount = this.decreaseCount.bind(this);
   }
   
   
@@ -122,11 +126,36 @@ class App extends Component {
    else{
     (products.some(product => product === p))?alert("product exist"): products.push(p);
       
-    this.setState(this.state.shoppingProducts = products)
+    this.setState({shoppingProducts : products})
    }
    
   }
+  deleteFromCart(p){
+    let products = this.state.shoppingProducts.filter(product => product.id !== p.id);
+    this.setState({shoppingProducts:products})
+  }
 
+  increaseCount(p){
+    let products = [...this.state.shoppingProducts];
+    let index = products.indexOf(p)
+    products[index] = {...products[index]}
+    if(products[index].amount < this.state.maxAmount){
+      products[index].amount++;
+    }
+    this.setState({shoppingProducts:products })
+  }
+
+  
+  decreaseCount(p){
+    let products = [...this.state.shoppingProducts];
+    let index = products.indexOf(p)
+    products[index] = {...products[index]}
+    if(products[index].amount !== 1){
+      products[index].amount--;
+    }
+    this.setState({shoppingProducts:products })
+  }
+  
   render() {
     return (
       <React.Fragment>
@@ -159,7 +188,7 @@ class App extends Component {
                 />
               )}
             />
-            <Route path="/shoppingCart" render={(props)=>(<ShoppingCart ShoppingProducts ={this.state.shoppingProducts} {...props}/>)} />
+            <Route path="/shoppingCart" render={(props)=>(<ShoppingCart ShoppingProducts ={this.state.shoppingProducts} handleDelete={this.deleteFromCart} handleIncreaseCount={this.increaseCount} handleDecreaseCount={this.decreaseCount} {...props}/>)} />
             <Route
               path="/productdetails/:id"
               render={(props) => (
