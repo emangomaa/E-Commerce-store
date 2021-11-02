@@ -8,10 +8,10 @@ class ShoppingCart extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="row container m-auto">
         <h1 className="col-12 m-5">Shopping Cart</h1>
         
-        <div className="d-none d-md-block">
+        <div className="col-12 d-none d-md-block">
           <table className="table table-hover mb-5">
             <thead>
               <tr>
@@ -44,22 +44,22 @@ class ShoppingCart extends Component {
         </div>
         {this.props.ShoppingProducts.map(p =>(
           <React.Fragment key={p.id}>
-            <div style={{border:"2px solid lightgray"}} className="row d-block d-md-none p-0 mb-3">
-            <div className="row p-0">
-              <div className="col-4">
-                <img src={process.env.PUBLIC_URL +`${p.src}`} alt="product imagr"/>
-              </div>
-              <div className="col-8">
-                <p>{p.name}</p>
-                <p>Price:{p.price}</p>
-                <div>
-                <button onClick={()=>this.props.handleIncreaseCount(p)} className="btn btn-primary  mx-2"> + </button>{p.amount}<button onClick={()=>this.props.handleDecreaseCount(p)} className="btn btn-primary mx-2">-</button>
+            <div style={{border:"2px solid lightgray"}} className="col-12 d-block d-md-none mb-3">
+             <div className="row p-1">
+                <div className="col-4">
+                  <img src={process.env.PUBLIC_URL +`${p.src}`} alt="product imagr"/>
                 </div>
-                <p>Total Price: {parseInt(p.price)*p.amount}.00 $</p>
-                <button onClick={()=>this.props.handleDelete(p)} className="btn btn-outline-danger">Delete</button>
+                <div className="col-8 p-2">
+                  <p>{p.name}</p>
+                  <p>Price:{p.price}</p>
+                  <div>
+                  <button onClick={()=>this.props.handleIncreaseCount(p)} className="btn btn-primary  mx-2"> + </button>{p.amount}<button onClick={()=>this.props.handleDecreaseCount(p)} className="btn btn-primary mx-2">-</button>
+                  </div>
+                  <p>Total Price: {parseInt(p.price)*p.amount}.00 $</p>
+                  <button onClick={()=>this.props.handleDelete(p)} className="btn btn-outline-danger">Delete</button>
+                </div>
               </div>
             </div>
-        </div>
           </React.Fragment>
         ))}
         <Link style={{display:"inline-block"}} to="/products" className="button col-12 mb-2 w-25 text-center">Back To Products</Link>
